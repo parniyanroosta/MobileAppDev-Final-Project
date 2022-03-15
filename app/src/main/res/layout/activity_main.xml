@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0.3"
+        android:contentDescription="@string/backgroundimage"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +32,7 @@
         android:shadowDx="12"
         android:shadowDy="12"
         android:shadowRadius="8"
-        android:text="Art Shop"
+        android:text="@string/art_shop"
         android:textColor="@color/MyFinalApp_txtColor"
         android:textSize="60sp"
         android:textStyle="bold|italic"
@@ -43,108 +44,121 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.503" />
 
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="300dp"
-
-        android:layout_height="0dp"
-        android:layout_marginBottom="48dp"
-        android:stretchColumns="1"
+    <LinearLayout
+        android:id="@+id/categoriesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TableRow
-            android:layout_width="150dp"
-            android:layout_height="100dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:text="First"
-                android:textAlignment="center" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_column="2"
-                android:text="Second"
-                android:textAlignment="center" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="150dp"
-            android:layout_height="100dp">
-
-            <ImageView
-
-                android:id="@+id/imageView111"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_column="1"
-                app:srcCompat="@drawable/background" />
-
-            <ImageView
-
-                android:id="@+id/imageView222"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_column="2"
-                app:srcCompat="@drawable/background" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="150dp"
-            android:layout_height="100dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:text="Third" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="2"
-                android:text="Forth" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="150dp"
-            android:layout_height="100dp">
-
-            <ImageView
-
-                android:id="@+id/imageView333"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_column="1"
-                app:srcCompat="@drawable/background" />
-
-            <ImageView
-
-                android:id="@+id/imageView444"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_column="2"
-                app:srcCompat="@drawable/background" />
-        </TableRow>
 
 
-    </TableLayout>
+    <LinearLayout
+        android:layout_height="400dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/firstCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:text="@string/painting"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView111"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/painting"
+            app:srcCompat="@drawable/painting" />
+
+        <TextView
+            android:id="@+id/thirdCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:text="@string/pottery"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView333"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/pottery"
+            app:srcCompat="@drawable/pottery"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="400dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/secondCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:text="@string/knitting"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView222"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/knitting"
+            app:srcCompat="@drawable/knitting" />
+
+
+        <TextView
+            android:id="@+id/forthCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:text="@string/Embroidery"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView444"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/Embroidery"
+            app:srcCompat="@drawable/embroidery" />
+
+    </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txt_HomePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Here is my website...."
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        android:text="@string/here_is_my_website"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAppTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAppTitle"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

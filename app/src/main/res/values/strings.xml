@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FinalProject_ParniyanRoosta</string>
+    <string name="painting">Painting</string>
+    <string name="art_shop">Art Shop</string>
+    <string name="here_is_my_website">Here is my website....</string>
+    <string name="knitting">Knitting</string>
+    <string name="pottery">Pottery</string>
+    <string name="sculpture">Sculpture</string>
+    <string name="Embroidery">embroidery</string>
+    <string name="backgroundimage">backgroundImage</string>
 </resources>
