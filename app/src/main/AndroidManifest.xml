@@ -10,14 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject_ParniyanRoosta">
 
-
-        <activity android:name=".Category_Painting"
-            android:label= "Second Activity"
+        <activity
+            android:name=".Category_Painting"
+            android:label="Painting"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.finalproject_parniyanroosta.MainActivity" />
+                android:value="com.example.finalproject_parniyanroosta.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Category_Knitting"
+            android:label="Knitting"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.finalproject_parniyanroosta.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Category_Pottery"
+            android:label="Pottery"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.finalproject_parniyanroosta.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Category_Embroidery"
+            android:label="Embroidery"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.finalproject_parniyanroosta.MainActivity" />
         </activity>
 
         <activity

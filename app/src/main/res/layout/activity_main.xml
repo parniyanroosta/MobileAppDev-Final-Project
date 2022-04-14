@@ -21,13 +21,14 @@
 
     <TextView
         android:id="@+id/txtAppTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="74dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginBottom="500dp"
         android:fontFamily="cursive"
+        android:paddingLeft="10dp"
         android:shadowColor="#FFDF5BC5"
         android:shadowDx="12"
         android:shadowDy="12"
@@ -81,6 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:contentDescription="@string/painting"
+            android:onClick="StartPaintingActivity"
             app:srcCompat="@drawable/painting" />
 
         <TextView
@@ -98,6 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:contentDescription="@string/pottery"
+            android:onClick="StartPotteryActivity"
             app:srcCompat="@drawable/pottery"
             tools:ignore="ImageContrastCheck" />
     </LinearLayout>
@@ -126,6 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:contentDescription="@string/knitting"
+            android:onClick="StartKnittingActivity"
             app:srcCompat="@drawable/knitting" />
 
 
@@ -145,6 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:contentDescription="@string/Embroidery"
+            android:onClick="StartEmbroideryActivity"
             app:srcCompat="@drawable/embroidery" />
 
     </LinearLayout>

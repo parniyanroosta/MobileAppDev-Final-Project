@@ -14,13 +14,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+public void StartPaintingActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, Category_Painting.class);
+        startActivity(intent);
+}
 
-//later, when creating the onclick event on the images
-//    public void StartSecondActivity(View view) {
-//
-//        String msg = textMessage.getText().toString();
-//        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-//        intent.putExtra(MESSAGE_KEY, msg);
-//        startActivity(intent);
-//    }
+    public void StartPotteryActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, Category_Pottery.class);
+        startActivity(intent);
+    }
+
+    public void StartKnittingActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, Category_Knitting.class);
+        startActivity(intent);
+    }
+
+    public void StartEmbroideryActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, Category_Embroidery.class);
+        startActivity(intent);
+    }
 }

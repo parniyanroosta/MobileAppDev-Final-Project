@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_category_embroidery.xml" value="0.3546875" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_category_knitting.xml" value="0.3546875" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_category_painting.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_category_pottery.xml" value="0.3546875" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
       </map>
     </option>
