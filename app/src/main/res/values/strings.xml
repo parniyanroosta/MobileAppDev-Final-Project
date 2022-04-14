@@ -1,11 +1,14 @@
 <resources>
-    <string name="app_name">FinalProject_ParniyanRoosta</string>
+    <string name="app_name">Art Shop</string>
     <string name="painting">Painting</string>
     <string name="art_shop">Art Shop</string>
-    <string name="here_is_my_website">Here is my website....</string>
+    <string name="here_is_my_website"> You can find your category of interest below, and by browsing the images of the handmade art in each category, you can choose your favourite one to buy!</string>
     <string name="knitting">Knitting</string>
     <string name="pottery">Pottery</string>
     <string name="sculpture">Sculpture</string>
     <string name="Embroidery">embroidery</string>
     <string name="backgroundimage">backgroundImage</string>
+    <string name="login">Login</string>
+    <string name="about_me">About me</string>
+    <string name="contact">Contact</string>
 </resources>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject_ParniyanRoosta">
-
+        <activity
+            android:name=".AboutMe"
+            android:exported="false" />
         <activity
             android:name=".Category_Painting"
             android:label="Painting"
@@ -42,7 +44,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.finalproject_parniyanroosta.MainActivity" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
