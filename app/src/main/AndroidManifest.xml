@@ -11,7 +11,20 @@
         android:theme="@style/Theme.FinalProject_ParniyanRoosta">
         <activity
             android:name=".AboutMe"
-            android:exported="false" />
+            android:label="About me"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.finalproject_parniyanroosta.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ContactPage"
+            android:label="Contact"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.finalproject_parniyanroosta.MainActivity" />
+        </activity>
         <activity
             android:name=".Category_Painting"
             android:label="Painting"
