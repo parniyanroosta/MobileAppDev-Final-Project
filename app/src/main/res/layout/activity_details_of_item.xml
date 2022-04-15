@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".DetailsOfItem">
 
+    <ImageView
+        android:id="@+id/artImageDetail"
+        android:layout_width="249dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/painting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="@color/MyFinalApp_txtColor"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artImageDetail" />
+
+    <TextView
+        android:id="@+id/descriptionDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textColor="@color/MyFinalApp_txtColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleDetail" />
 </androidx.constraintlayout.widget.ConstraintLayout>

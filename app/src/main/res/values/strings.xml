@@ -2,7 +2,9 @@
     <string name="app_name">Art Shop</string>
     <string name="painting">Painting</string>
     <string name="art_shop">Art Shop</string>
-    <string name="here_is_my_website"> You can find your category of interest below, and by browsing the images of the handmade art in each category, you can choose your favourite one to buy!</string>
+    <string name="here_is_my_website"> You can find your category of interest below,
+        and by browsing the images of the handmade art in each category,
+        you can choose your favourite one to buy!</string>
     <string name="knitting">Knitting</string>
     <string name="pottery">Pottery</string>
     <string name="sculpture">Sculpture</string>
@@ -12,4 +14,55 @@
     <string name="about_me">About me</string>
     <string name="contact">Contact</string>
     <string name="more">more</string>
+    <string name="title_placeholder">Title</string>
+    <string name="sports_info_placeholder">Click for more info.</string>
+    <string name="description_placeholder"> I should come up with a way for the app
+        to brows the item descriptions and display the one related to each individual item.
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Praesent ultrices congue rutrum.
+        Phasellus elementum ipsum ac convallis aliquam. Suspendisse eleifend
+        eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum
+        blandit, dolor diam fringilla tellus, eu euismod mauris neque
+        at neque.</string>
+
+<string-array name="items_titles">
+    <item>Daisies</item>
+    <item>Elephants</item>
+    <item>FancyFlowers</item>
+    <item>FlowerVase</item>
+    <item>FlowersOnTheWall</item>
+    <item>HappyTrees</item>
+    <item>Mountains</item>
+    <item>Orchids</item>
+    <item>Persian</item>
+    <item>RainyAutumn</item>
+</string-array>
+
+<string-array name="items_description">
+    <item>Daisies</item>
+    <item>Elephants at sunset</item>
+    <item>Flowers in fantasy</item>
+    <item>Flower bouquet</item>
+    <item>Small flowers on a clay wall</item>
+    <item>Happy autumn trees</item>
+    <item>Mountains</item>
+    <item>Beautiful orchids</item>
+    <item>Persian style painting</item>
+    <item>Romantic rainy day</item>
+</string-array>
+
+
+<array name="items_images">
+    <item>@drawable/img_daisies</item>
+    <item>@drawable/img_elephants</item>
+    <item>@drawable/img_fancyflowers</item>
+    <item>@drawable/img_flowervase</item>
+    <item>@drawable/img_flowersonthewall</item>
+    <item>@drawable/img_happytrees</item>
+    <item>@drawable/img_mountains</item>
+    <item>@drawable/img_orchids</item>
+    <item>@drawable/img_persian</item>
+    <item>@drawable/img_rainyautumn</item>
+</array>
+
 </resources>

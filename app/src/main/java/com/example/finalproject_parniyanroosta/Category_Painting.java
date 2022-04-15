@@ -1,167 +1,122 @@
 package com.example.finalproject_parniyanroosta;
 
-import android.content.Intent;
+import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.ItemTouchHelper;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Category_Painting extends AppCompatActivity {
+    // Member variables.
+    private RecyclerView mRecyclerView;
+    private ArrayList<Item> mItemsData;
+    private ItemAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_painting);
 
-        //to receive the intent from the main activity
-        Intent intent = getIntent();
-
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               addMoreItems(view);
-            }
-        });
-    }
-
-    public void addMoreItems(View view) {
-        //TODO ------ load more images
-    }
-}
-
-
-
-/*
-
-    // Member variables.
-    private RecyclerView mRecyclerView;
-    private ArrayList<Sport> mSportsData;
-    private SportsAdapter mAdapter;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
         int gridColumnCount =
                 getResources().getInteger(R.integer.grid_column_count);
 
         int swipeDirs;
-        if(gridColumnCount > 1){
+        if (gridColumnCount > 1) {
             swipeDirs = 0;
         } else {
             swipeDirs = ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
         }
 
-
-
         // Initialize the RecyclerView.
         mRecyclerView = findViewById(R.id.recyclerView);
 
         // Set the Layout Manager.
-        //mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.setLayoutManager(new
-                GridLayoutManager(this, gridColumnCount));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setLayoutManager(new GridLayoutManager(this, gridColumnCount));
 
         // Initialize the ArrayList that will contain the data.
-        mSportsData = new ArrayList<>();
+        mItemsData = new ArrayList<>();
 
         // Initialize the adapter and set it to the RecyclerView.
-        mAdapter = new SportsAdapter(this, mSportsData);
+        mAdapter = new ItemAdapter(this, mItemsData);
         mRecyclerView.setAdapter(mAdapter);
 
         // Get the data.
         initializeData();
 
-        // Helper class for creating swipe to dismiss and drag and drop
-        // functionality.
+        // Helper class for creating swipe to dismiss and drag and drop functionality.
         ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper
                 .SimpleCallback(
-                    ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT |
-                    ItemTouchHelper.DOWN | ItemTouchHelper.UP, swipeDirs) {
-            /**
-             * Defines the drag and drop functionality.
-             *
-             * @param recyclerView The RecyclerView that contains the list items
-             * @param viewHolder The SportsViewHolder that is being moved
-             * @param target The SportsViewHolder that you are switching the
-             *               original one with.
-             * @return true if the item was moved, false otherwise
-             */
-@Override
-public boolean onMove(RecyclerView recyclerView,
-                      RecyclerView.ViewHolder viewHolder,
-                      RecyclerView.ViewHolder target) {
-    // Get the from and to positions.
-    int from = viewHolder.getAdapterPosition();
-    int to = target.getAdapterPosition();
+                ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT |
+                        ItemTouchHelper.DOWN | ItemTouchHelper.UP, swipeDirs) {
 
-    // Swap the items and notify the adapter.
-    Collections.swap(mSportsData, from, to);
-    mAdapter.notifyItemMoved(from, to);
-    return true;
-}
 
-    /**
-     * Defines the swipe to dismiss functionality.
-     *
-     * @param viewHolder The viewholder being swiped.
-     * @param direction The direction it is swiped in.
-     */
-    @Override
-    public void onSwiped(RecyclerView.ViewHolder viewHolder,
-                         int direction) {
-        // Remove the item from the dataset.
-        mSportsData.remove(viewHolder.getAdapterPosition());
-        // Notify the adapter.
-        mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
-    }
-});
+            //Defines the drag and drop functionality
+            @Override
+            public boolean onMove(RecyclerView recyclerView,
+                                  RecyclerView.ViewHolder viewHolder,
+                                  RecyclerView.ViewHolder target) {
+                // Get the from and to positions
+                int from = viewHolder.getAdapterPosition();
+                int to = target.getAdapterPosition();
 
-        // Attach the helper to the RecyclerView.
+                // Swap the items and notify the adapter.
+                Collections.swap(mItemsData, from, to);
+                mAdapter.notifyItemMoved(from, to);
+                return true;
+            }
+
+            @Override
+            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+                // Remove the item from the dataset
+                mItemsData.remove(viewHolder.getAdapterPosition());
+                // Notify the adapter.
+                mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
+            }
+        });
+
+        // Attach the helper to the RecyclerView
         helper.attachToRecyclerView(mRecyclerView);
-        }
 
-/**
- * Initialize the sports data from resources.
- */
-private void initializeData() {
-        // Get the resources from the XML file.
-        String[] sportsList = getResources()
-        .getStringArray(R.array.sports_titles);
-        String[] sportsInfo = getResources()
-        .getStringArray(R.array.sports_info);
-        TypedArray sportsImageResources = getResources()
-        .obtainTypedArray(R.array.sports_images);
+    }
+
+    // Initialize items data from resources.
+    private void initializeData() {
+        // Get the resources from the XML file
+        String[] itemsList = getResources()
+                .getStringArray(R.array.items_titles);
+        String[] itemsDescription = getResources()
+                .getStringArray(R.array.items_description);
+        TypedArray itemsImageResources = getResources()
+                .obtainTypedArray(R.array.items_images);
 
         // Clear the existing data (to avoid duplication).
-        mSportsData.clear();
+        mItemsData.clear();
 
-        // Create the ArrayList of Sports objects with the titles and
-        // information about each sport
-        for (int i = 0; i < sportsList.length; i++) {
-        mSportsData.add(new Sport(sportsList[i], sportsInfo[i],
-        sportsImageResources.getResourceId(i, 0)));
+        // Create the ArrayList of Items objects with the titles and
+        // information about each item
+        for (int i = 0; i < itemsList.length; i++) {
+            mItemsData.add(new Item(itemsList[i], itemsDescription[i],
+                    itemsImageResources.getResourceId(i, 0)));
         }
 
         // Recycle the typed array.
-        sportsImageResources.recycle();
+        itemsImageResources.recycle();
 
         // Notify the adapter of the change.
         mAdapter.notifyDataSetChanged();
-        }
+    }
+}
 
-/**
- * onClick method for th FAB that resets the data.
- *
- * @param view The button view that was clicked.
- */
-public void resetSports(View view) {
-        initializeData();
-        }
-        }
- */
+
+            //onClick method for th FAB that///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          //  public void resetSports(View view) {
+           //     initializeData();
+          //  }
+
