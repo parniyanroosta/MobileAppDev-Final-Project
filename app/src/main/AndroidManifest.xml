@@ -10,7 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject_ParniyanRoosta">
         <activity
-            android:name=".DetailsOfItem"
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:label="Login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.finalproject_parniyanroosta.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DetailActivity"
             android:exported="false" />
         <activity
             android:name=".AboutMe"

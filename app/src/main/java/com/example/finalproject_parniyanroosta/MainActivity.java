@@ -1,20 +1,55 @@
 package com.example.finalproject_parniyanroosta;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    ImageView imgViewPainting, imgViewPottery, imgViewKnitting, imgViewEmbroidery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    imgViewPainting = findViewById(R.id.imageViewPainting);
+    imgViewPainting.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            StartPaintingActivity(view);
+        }
+    });
+
+        imgViewKnitting = findViewById(R.id.imageViewKnitting);
+        imgViewKnitting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StartKnittingActivity(view);
+            }
+        });
+
+        imgViewPottery = findViewById(R.id.imageViewPottery);
+        imgViewPottery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StartPotteryActivity(view);
+            }
+        });
+
+        imgViewEmbroidery = findViewById(R.id.imageViewEmbroidery);
+        imgViewEmbroidery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StartEmbroideryActivity(view);
+            }
+        });
+
     }
 
     public void StartPaintingActivity(View view) {
@@ -67,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
                 return true;
             case R.id.action_login:
-                //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                Intent intent3 = new Intent(this, LoginPage.class);
+                startActivity(intent3);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

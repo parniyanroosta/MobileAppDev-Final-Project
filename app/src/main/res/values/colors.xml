@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="MyFinalApp_txtColor">#300327</color>
+    <color name="backgroundColor">#E9CEF5</color>
 </resources>

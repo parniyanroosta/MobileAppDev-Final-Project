@@ -16,20 +16,6 @@
         android:layout_height="match_parent"
         />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="67dp"
-        android:layout_height="53dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
-        android:backgroundTint="@color/ic_action_aboutme_background"
-        android:contentDescription="@string/more"
-        android:layoutDirection="inherit"
-        android:src="@drawable/ic_action_addmore_foreground"
-        android:tint="@color/MyFinalApp_txtColor"
-        android:onClick="addMoreItems"/>
-
 
 </RelativeLayout>
 

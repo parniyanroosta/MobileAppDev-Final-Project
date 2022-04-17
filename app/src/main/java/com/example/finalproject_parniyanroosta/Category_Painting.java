@@ -115,8 +115,3 @@ public class Category_Painting extends AppCompatActivity {
 }
 
 
-            //onClick method for th FAB that///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-          //  public void resetSports(View view) {
-           //     initializeData();
-          //  }
-

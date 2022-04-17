@@ -24,45 +24,62 @@
         eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum
         blandit, dolor diam fringilla tellus, eu euismod mauris neque
         at neque.</string>
-
-<string-array name="items_titles">
-    <item>Daisies</item>
-    <item>Elephants</item>
-    <item>FancyFlowers</item>
-    <item>FlowerVase</item>
-    <item>FlowersOnTheWall</item>
-    <item>HappyTrees</item>
-    <item>Mountains</item>
-    <item>Orchids</item>
-    <item>Persian</item>
-    <item>RainyAutumn</item>
-</string-array>
-
-<string-array name="items_description">
-    <item>Daisies</item>
-    <item>Elephants at sunset</item>
-    <item>Flowers in fantasy</item>
-    <item>Flower bouquet</item>
-    <item>Small flowers on a clay wall</item>
-    <item>Happy autumn trees</item>
-    <item>Mountains</item>
-    <item>Beautiful orchids</item>
-    <item>Persian style painting</item>
-    <item>Romantic rainy day</item>
-</string-array>
+    <string name="welcome_to_your_profile_page_where_you_can_manage_your_account_view_your_orders_and_balance_on_your_gift_cards_the_functionality_on_this_page_is_not_set_yet">Welcome to your profile page, where you can manage your account, view your orders and balance on your gift cards! ( The functionality on this page is not set yet!!!!)</string>
+    <string name="user_id">User ID :</string>
+    <string name="password">Password :</string>
+    <string name="enter_user_id">Enter user ID</string>
+    <string name="enter_password">Enter password</string>
+    <string name="register_new_user">Register new user</string>
+    <string name="hi_n_my_name_is_parniyan_and_i_m_a_persian_canadian_artist_n_who_loves_to_create_handmade_art_and_sell_them_online_n_i_hope_you_enjoy_the_beauty_of_my_art">Hi,\n My name is Parniyan and I\'m a persian-canadian artist \n who loves to create handmade art and sell them online. \n I hope you enjoy the beauty of my art!</string>
+    <string name="todo">TODO</string>
+    <string name="contact_me">Contact Me :</string>
+    <string name="follow_me">Follow me :</string>
+    <string name="email_parniyan_roosta_gmail_com">Email: parniyan.roosta@gmail.com</string>
+    <string name="facebook_parniyan_roosta">Facebook: parniyan.roosta</string>
+    <string name="instagram_parniyan_roosta">Instagram: @parniyan.roosta</string>
+    <string name="phone_587_777_7777">Phone: 587-777-7777</string>
+    <string name="send_me_a_message">Send me a message :</string>
+    <string name="send">SEND</string>
 
 
-<array name="items_images">
-    <item>@drawable/img_daisies</item>
-    <item>@drawable/img_elephants</item>
-    <item>@drawable/img_fancyflowers</item>
-    <item>@drawable/img_flowervase</item>
-    <item>@drawable/img_flowersonthewall</item>
-    <item>@drawable/img_happytrees</item>
-    <item>@drawable/img_mountains</item>
-    <item>@drawable/img_orchids</item>
-    <item>@drawable/img_persian</item>
-    <item>@drawable/img_rainyautumn</item>
-</array>
+    <string-array name="items_titles">
+        <item>Daisies</item>
+        <item>Elephants</item>
+        <item>FancyFlowers</item>
+        <item>FlowerVase</item>
+        <item>FlowersOnTheWall</item>
+        <item>HappyTrees</item>
+        <item>Mountains</item>
+        <item>Orchids</item>
+        <item>Persian</item>
+        <item>RainyAutumn</item>
+    </string-array>
+
+    <string-array name="items_description">
+        <item>Daisies</item>
+        <item>Elephants at sunset</item>
+        <item>Flowers in fantasy</item>
+        <item>Flower bouquet</item>
+        <item>Small flowers on a clay wall</item>
+        <item>Happy autumn trees</item>
+        <item>Mountains</item>
+        <item>Beautiful orchids</item>
+        <item>Persian style painting</item>
+        <item>Romantic rainy day</item>
+    </string-array>
+
+
+    <array name="items_images">
+        <item>@drawable/img_daisies</item>
+        <item>@drawable/img_elephants</item>
+        <item>@drawable/img_fancyflowers</item>
+        <item>@drawable/img_flowervase</item>
+        <item>@drawable/img_flowersonthewall</item>
+        <item>@drawable/img_happytrees</item>
+        <item>@drawable/img_mountains</item>
+        <item>@drawable/img_orchids</item>
+        <item>@drawable/img_persian</item>
+        <item>@drawable/img_rainyautumn</item>
+    </array>
 
 </resources>

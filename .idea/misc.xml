@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/drawable/ic_action_aboutme.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/drawable/ic_action_aboutme_foreground.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_about_me.xml" value="0.2890625" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_category_embroidery.xml" value="0.3546875" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_category_knitting.xml" value="0.3546875" />
@@ -11,9 +12,16 @@
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_category_pottery.xml" value="0.3546875" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_contact_page.xml" value="0.3546875" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_details_of_item.xml" value="0.3546875" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_login_page.xml" value="0.3546875" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/activity_profile_page.xml" value="0.33" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/layout/list_item.xml" value="0.340625" />
         <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/menu/main_menu.xml" value="0.3546875" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/mipmap-anydpi-v26/ic_action_aboutme.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/mipmap-anydpi-v26/ic_action_aboutme_round.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/mipmap-anydpi-v26/ic_action_addmore.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/mipmap-anydpi-v26/ic_action_addmore_round.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/iman/AndroidStudioProjects/FinalProject_ParniyanRoosta/app/src/main/res/mipmap-anydpi-v26/ic_action_contact.xml" value="0.20260416666666667" />
       </map>
     </option>
   </component>

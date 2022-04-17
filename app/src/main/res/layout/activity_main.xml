@@ -81,7 +81,7 @@
                 android:textStyle="bold|italic" />
 
             <ImageView
-                android:id="@+id/imageView111"
+                android:id="@+id/imageViewPainting"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:contentDescription="@string/painting"
@@ -101,7 +101,7 @@
                 android:textStyle="bold|italic" />
 
             <ImageView
-                android:id="@+id/imageView333"
+                android:id="@+id/imageViewPottery"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:contentDescription="@string/pottery"
@@ -131,7 +131,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <ImageView
-                android:id="@+id/imageView222"
+                android:id="@+id/imageViewKnitting"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:contentDescription="@string/knitting"
@@ -153,7 +153,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView444"
+                android:id="@+id/imageViewEmbroidery"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:contentDescription="@string/Embroidery"
