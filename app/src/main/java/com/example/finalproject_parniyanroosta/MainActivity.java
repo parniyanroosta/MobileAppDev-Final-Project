@@ -18,13 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    imgViewPainting = findViewById(R.id.imageViewPainting);
-    imgViewPainting.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            StartPaintingActivity(view);
-        }
-    });
+        imgViewPainting = findViewById(R.id.imageViewPainting);
+        imgViewPainting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StartPaintingActivity(view);
+            }
+        });
 
         imgViewKnitting = findViewById(R.id.imageViewKnitting);
         imgViewKnitting.setOnClickListener(new View.OnClickListener() {
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // The action bar will automatically handle clicks
-       switch ( item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_about:
                 Intent intent = new Intent(this, AboutMe.class);
                 startActivity(intent);
