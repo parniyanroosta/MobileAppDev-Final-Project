@@ -15,15 +15,9 @@
     <string name="contact">Contact</string>
     <string name="more">more</string>
     <string name="title_placeholder">Title</string>
-    <string name="sports_info_placeholder">Click for more info.</string>
-    <string name="description_placeholder"> I should come up with a way for the app
-        to brows the item descriptions and display the one related to each individual item.
-        Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Praesent ultrices congue rutrum.
-        Phasellus elementum ipsum ac convallis aliquam. Suspendisse eleifend
-        eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum
-        blandit, dolor diam fringilla tellus, eu euismod mauris neque
-        at neque.</string>
+    <string name="items_info_placeholder">Click for more info.</string>
+    <string name="description_placeholder"> If you are interested to learn more about this item, please click on the image!.
+        </string>
     <string name="welcome_to_your_profile_page_where_you_can_manage_your_account_view_your_orders_and_balance_on_your_gift_cards_the_functionality_on_this_page_is_not_set_yet">Welcome to your profile page, where you can manage your account, view your orders and balance on your gift cards! ( The functionality on this page is not set yet!!!!)</string>
     <string name="user_id">User ID :</string>
     <string name="password">Password :</string>

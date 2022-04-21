@@ -29,6 +29,7 @@ public class LoginPage extends AppCompatActivity {
         String password = mPreference.getString(user.getText().toString(), "");
         if ( password.equals(pass.getText().toString()))
         {
+            //call the api
             Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginPage.this, ProfilePage.class);
             startActivity(intent);

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/sportsImage"
+            android:id="@+id/artImageDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"/>
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:layout_alignBottom="@id/sportsImage"
+            android:layout_alignBottom="@id/artImageDetail"
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
             android:text="@string/title_placeholder" />
 
@@ -31,11 +31,19 @@
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/sportsImage"
+            android:layout_below="@id/artImageDetail"
             android:textColor="?android:textColorSecondary"
             android:padding="8dp"
             android:text="@string/description_placeholder" />
-
+        <TextView
+            android:id="@+id/descriptionDetail"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artImageDetail"
+            android:textColor="?android:textColorSecondary"
+            android:padding="8dp"
+            android:text="@string/description_placeholder" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
