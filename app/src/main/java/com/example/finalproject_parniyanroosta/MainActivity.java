@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,55 +18,35 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imgViewPainting = findViewById(R.id.imageViewPainting);
-        imgViewPainting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                StartPaintingActivity(view);
-            }
-        });
+        imgViewPainting.setOnClickListener(v -> StartPaintingActivity());
 
         imgViewKnitting = findViewById(R.id.imageViewKnitting);
-        imgViewKnitting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                StartKnittingActivity(view);
-            }
-        });
+        imgViewKnitting.setOnClickListener(v -> StartKnittingActivity());
 
         imgViewPottery = findViewById(R.id.imageViewPottery);
-        imgViewPottery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                StartPotteryActivity(view);
-            }
-        });
+        imgViewPottery.setOnClickListener(v -> StartPotteryActivity());
 
         imgViewEmbroidery = findViewById(R.id.imageViewEmbroidery);
-        imgViewEmbroidery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                StartEmbroideryActivity(view);
-            }
-        });
+        imgViewEmbroidery.setOnClickListener(v -> StartEmbroideryActivity());
 
     }
 
-    public void StartPaintingActivity(View view) {
+    public void StartPaintingActivity() {
         Intent intent = new Intent(MainActivity.this, Category_Painting.class);
         startActivity(intent);
     }
 
-    public void StartPotteryActivity(View view) {
+    public void StartPotteryActivity() {
         Intent intent = new Intent(MainActivity.this, Category_Pottery.class);
         startActivity(intent);
     }
 
-    public void StartKnittingActivity(View view) {
+    public void StartKnittingActivity() {
         Intent intent = new Intent(MainActivity.this, Category_Knitting.class);
         startActivity(intent);
     }
 
-    public void StartEmbroideryActivity(View view) {
+    public void StartEmbroideryActivity() {
         Intent intent = new Intent(MainActivity.this, Category_Embroidery.class);
         startActivity(intent);
     }
