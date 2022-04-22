@@ -16,8 +16,7 @@
     <string name="more">more</string>
     <string name="title_placeholder">Title</string>
     <string name="items_info_placeholder">Click for more info.</string>
-    <string name="description_placeholder"> If you are interested to learn more about this item, please click on the image!.
-        </string>
+    <string name="description_placeholder"> If you are interested to learn more about this item, please click on the image! </string>
     <string name="welcome_to_your_profile_page_where_you_can_manage_your_account_view_your_orders_and_balance_on_your_gift_cards_the_functionality_on_this_page_is_not_set_yet">Welcome to your profile page, where you can manage your account, view your orders and balance on your gift cards! ( The functionality on this page is not set yet!!!!)</string>
     <string name="user_id">User ID :</string>
     <string name="password">Password :</string>
@@ -50,16 +49,16 @@
     </string-array>
 
     <string-array name="items_description">
-        <item>Daisies</item>
-        <item>Elephants at sunset</item>
-        <item>Flowers in fantasy</item>
-        <item>Flower bouquet</item>
-        <item>Small flowers on a clay wall</item>
-        <item>Happy autumn trees</item>
-        <item>Mountains</item>
-        <item>Beautiful orchids</item>
-        <item>Persian style painting</item>
-        <item>Romantic rainy day</item>
+        <item>This painting offers the contrast of colors as well as the impasto technique, to display the beauty of white daisies on a dark navy background.\nMedium &#58; acrylic paints and pastes</item>
+        <item>The peaceful walk of elephants on the calm and silent scenery in the beautiful sunset.\nMedium &#58; Oil color</item>
+        <item>Vivid colors of fancy flowers will bring happiness and joy to your eyes, as well as your home.\nMedium &#58; Acrylic paints and pastes </item>
+        <item>The exquisite blend of vivid and happy colors, to create the most beautiful abstract painting of the wild flowers bouquet in a vase &#33; \nMedium &#58; Acrylic paints and pastes</item>
+        <item>Imagine a very calm afternoon walk in the most silent alley of the town, and seeing the beautiful bunches of small white flowers on top of the clay wall of an old house &#46; &#46; &#46;\nMedium &#58; Acrylic paints and pastes</item>
+        <item>Autumn in my eyes &#33; Happy, colorful and full of love and warmth.\nMedium &#58; Acrylic paints and pastes</item>
+        <item>Abstract painting of peaceful and mysterious mountains.\nMedium &#58; Acrylic paint</item>
+        <item>The most gorgeous and elegant flowers of all the time, orchids &#33;\n Medium &#58; Acrylic paints and pastes</item>
+        <item>Persian style painting &#33; making me homesick already &#46; &#46; &#46;\nMedium &#58; Acrylic paints, pastes and clay </item>
+        <item>A lovely walk in a rainy evening, in a Parisian park &#33;\nMedium &#58; Acrylic paints and pastes</item>
     </string-array>
 
 

@@ -78,7 +78,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
         void bindTo(Item currentItem){
             // Populate the textViews with data.
             mTitleText.setText(currentItem.getTitle());
-            mDescriptionText.setText(currentItem.getInfo());
+           // mDescriptionText.setText(currentItem.getInfo());
 
             // Load the images into the ImageView using the Glide library.
             Glide.with(mContext).load(currentItem.getImageResource()).into(mItemImage);
@@ -90,8 +90,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
             Item currentItem = mItemsData.get(getAdapterPosition());
             Intent detailIntent = new Intent(mContext, DetailActivity.class);
             detailIntent.putExtra("title", currentItem.getTitle());
-            detailIntent.putExtra("image_resource",
-                    currentItem.getImageResource());
+            detailIntent.putExtra("image_resource", currentItem.getImageResource());
+            detailIntent.putExtra("description", currentItem.getInfo());
             mContext.startActivity(detailIntent);
         }
     }
