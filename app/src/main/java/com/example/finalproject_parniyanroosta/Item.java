@@ -8,18 +8,20 @@ public class Item {
     private String title;
     private String description;
     private final int imageResource;
+    private int price;
 
 
     // Constructor for the Item data model.
-    public Item(String title, String description, int imageResource) {
+    public Item(String title, String description, int imageResource, int price) {
         this.title = title;
         this.description = description;
         this.imageResource = imageResource;
+        this.price = price;
     }
 
     String getTitle() { return title; }
     String getInfo() { return description; }
-
+    public int getPrice() { return price;  }
     public int getImageResource() { return imageResource; }
 
 }

@@ -33,7 +33,7 @@
     <string name="phone_587_777_7777">Phone: 587-777-7777</string>
     <string name="send_me_a_message">Send me a message :</string>
     <string name="send">SEND</string>
-    <string name="page_not_implemented">This page\'s code is not implemented yet, but the structure is the same as the \"Painting Category\". Sorry for the inconvenience!</string>
+    <string name="page_not_implemented">This page\'s code is not implemented yet, but the structure is the same as the \"Painting Category\".\nSorry for the inconvenience!</string>
     <string name="textview">TextView</string>
     <string name="price">Price :</string>
 

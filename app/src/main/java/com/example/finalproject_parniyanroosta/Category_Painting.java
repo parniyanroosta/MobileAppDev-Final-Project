@@ -92,7 +92,7 @@ public class Category_Painting extends AppCompatActivity {
         // Create the ArrayList of Items objects with the titles and
         // information about each item
         for (int i = 0; i < itemsList.length; i++) {
-            mItemsData.add(new Item(itemsList[i], itemsDescription[i], itemsImageResources.getResourceId(i, 0)));
+            mItemsData.add(new Item(itemsList[i], itemsDescription[i], itemsImageResources.getResourceId(i, 0), itemsPrice[i]));
         }
 
         // Recycle the typed array.
