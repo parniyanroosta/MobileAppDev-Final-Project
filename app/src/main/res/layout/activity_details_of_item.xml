@@ -10,7 +10,7 @@
         android:id="@+id/artImageDetail"
         android:layout_width="249dp"
         android:layout_height="246dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/painting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="TextView"
         android:textColor="@color/MyFinalApp_txtColor"
         android:textSize="18sp"
@@ -34,11 +34,21 @@
         android:layout_width="250dp"
         android:layout_height="150dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="TextView"
         android:textColor="@color/MyFinalApp_txtColor"
         android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleDetail" />
+
+    <TextView
+        android:id="@+id/txtViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionDetail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
