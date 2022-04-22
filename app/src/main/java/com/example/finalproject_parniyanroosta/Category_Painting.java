@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Category_Painting extends AppCompatActivity {
-    // Member variables.
+
     private RecyclerView mRecyclerView;
     private ArrayList<Item> mItemsData;
     private ItemAdapter mAdapter;
@@ -22,8 +22,7 @@ public class Category_Painting extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_painting);
 
-        int gridColumnCount =
-                getResources().getInteger(R.integer.grid_column_count);
+        int gridColumnCount = getResources().getInteger(R.integer.grid_column_count);
 
         int swipeDirs;
         if (gridColumnCount > 1) {
@@ -51,16 +50,11 @@ public class Category_Painting extends AppCompatActivity {
 
         // Helper class for creating swipe to dismiss and drag and drop functionality.
         ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper
-                .SimpleCallback(
-                ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT |
-                        ItemTouchHelper.DOWN | ItemTouchHelper.UP, swipeDirs) {
-
-
+                .SimpleCallback(ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT | ItemTouchHelper.DOWN | ItemTouchHelper.UP, swipeDirs)
+        {
             //Defines the drag and drop functionality
             @Override
-            public boolean onMove(RecyclerView recyclerView,
-                                  RecyclerView.ViewHolder viewHolder,
-                                  RecyclerView.ViewHolder target) {
+            public boolean onMove(RecyclerView recyclerView,RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
                 // Get the from and to positions
                 int from = viewHolder.getAdapterPosition();
                 int to = target.getAdapterPosition();
@@ -82,18 +76,15 @@ public class Category_Painting extends AppCompatActivity {
 
         // Attach the helper to the RecyclerView
         helper.attachToRecyclerView(mRecyclerView);
-
     }
 
     // Initialize items data from resources.
     private void initializeData() {
         // Get the resources from the XML file
-        String[] itemsList = getResources()
-                .getStringArray(R.array.items_titles);
-        String[] itemsDescription = getResources()
-                .getStringArray(R.array.items_description);
-        TypedArray itemsImageResources = getResources()
-                .obtainTypedArray(R.array.items_images);
+        String[] itemsList = getResources().getStringArray(R.array.items_titles);
+        String[] itemsDescription = getResources().getStringArray(R.array.items_description);
+        int[] itemsPrice = getResources().getIntArray(R.array.items_price);
+        TypedArray itemsImageResources = getResources().obtainTypedArray(R.array.items_images);
 
         // Clear the existing data (to avoid duplication).
         mItemsData.clear();
@@ -101,8 +92,7 @@ public class Category_Painting extends AppCompatActivity {
         // Create the ArrayList of Items objects with the titles and
         // information about each item
         for (int i = 0; i < itemsList.length; i++) {
-            mItemsData.add(new Item(itemsList[i], itemsDescription[i],
-                    itemsImageResources.getResourceId(i, 0)));
+            mItemsData.add(new Item(itemsList[i], itemsDescription[i], itemsImageResources.getResourceId(i, 0)));
         }
 
         // Recycle the typed array.
@@ -111,6 +101,11 @@ public class Category_Painting extends AppCompatActivity {
         // Notify the adapter of the change.
         mAdapter.notifyDataSetChanged();
     }
+
+
+
+
+
 }
 
 

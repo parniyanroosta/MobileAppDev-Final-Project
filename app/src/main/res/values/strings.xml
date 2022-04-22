@@ -33,19 +33,23 @@
     <string name="phone_587_777_7777">Phone: 587-777-7777</string>
     <string name="send_me_a_message">Send me a message :</string>
     <string name="send">SEND</string>
+    <string name="page_not_implemented">This page\'s code is not implemented yet, but the structure is the same as the \"Painting Category\". Sorry for the inconvenience!</string>
+    <string name="textview">TextView</string>
+    <string name="price">Price :</string>
+
 
 
     <string-array name="items_titles">
         <item>Daisies</item>
         <item>Elephants</item>
-        <item>FancyFlowers</item>
-        <item>FlowerVase</item>
-        <item>FlowersOnTheWall</item>
-        <item>HappyTrees</item>
+        <item>Fancy Flowers</item>
+        <item>Flower Vase</item>
+        <item>Flowers On The Wall</item>
+        <item>Happy Trees</item>
         <item>Mountains</item>
         <item>Orchids</item>
         <item>Persian</item>
-        <item>RainyAutumn</item>
+        <item>Rainy Autumn</item>
     </string-array>
 
     <string-array name="items_description">
@@ -74,5 +78,20 @@
         <item>@drawable/img_persian</item>
         <item>@drawable/img_rainyautumn</item>
     </array>
+
+    <integer-array name="items_price">
+        <item>250</item>
+        <item>380</item>
+        <item>360</item>
+        <item>150</item>
+        <item>450</item>
+        <item>500</item>
+        <item>180</item>
+        <item>700</item>
+        <item>150</item>
+        <item>170</item>
+    </integer-array>
+
+
 
 </resources>

@@ -14,7 +14,8 @@
         android:src="@drawable/painting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/titleDetail"
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textColor="@color/MyFinalApp_txtColor"
         android:textSize="18sp"
         android:textStyle="bold|italic"
@@ -35,7 +36,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textColor="@color/MyFinalApp_txtColor"
         android:textSize="16sp"
         android:textStyle="italic"
@@ -43,12 +44,39 @@
         app:layout_constraintTop_toBottomOf="@+id/titleDetail" />
 
     <TextView
-        android:id="@+id/txtViewPrice"
+        android:id="@+id/txtViewP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="@string/price"
+        android:textColor="@color/MyFinalApp_txtColor"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionDetail" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_action_cart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/backgroundColor"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/txtViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/textview"
+        app:layout_constraintStart_toEndOf="@+id/txtViewP"
         app:layout_constraintTop_toBottomOf="@+id/descriptionDetail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
