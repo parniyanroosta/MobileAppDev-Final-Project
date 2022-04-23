@@ -52,7 +52,17 @@
         android:text="@string/price"
         android:textColor="@color/MyFinalApp_txtColor"
         android:textSize="16sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionDetail" />
+
+    <TextView
+        android:id="@+id/txtViewPrice"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/txtViewP"
         app:layout_constraintTop_toBottomOf="@+id/descriptionDetail" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -70,13 +80,5 @@
         app:rippleColor="@color/backgroundColor"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
-    <TextView
-        android:id="@+id/txtViewPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/textview"
-        app:layout_constraintStart_toEndOf="@+id/txtViewP"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionDetail" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

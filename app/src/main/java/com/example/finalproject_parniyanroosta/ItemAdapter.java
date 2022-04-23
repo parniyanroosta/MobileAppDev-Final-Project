@@ -15,14 +15,12 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 
- // The adapter class for the RecyclerView, contains the items data.
-
+ // The adapter class for the RecyclerView, contains the items data
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
 
     // Member variables.
     private ArrayList<Item> mItemsData;
     private Context mContext;
-
 
     // Constructor that passes in the items data and the context.
     ItemAdapter(Context context, ArrayList<Item> itemsData) {
@@ -30,18 +28,20 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
         this.mContext = context;
     }
 
-    //I've used the google codelabs partially for this section:
 
-     // creating the viewholder objects
+    /*
+    //I've followed the google codeLabs (MaterialMe) for this section:
+    */
+
+
+     // creating the viewHolder objects
     @Override
-    public ItemAdapter.ViewHolder onCreateViewHolder(
-            ViewGroup parent, int viewType) {
+    public ItemAdapter.ViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(mContext).
                 inflate(R.layout.list_item, parent, false));
     }
 
-    // method that binds the data to the viewholder.
-
+    // method that binds the data to the viewHolder
     @Override
     public void onBindViewHolder(ItemAdapter.ViewHolder holder, int position) {
         // Get current item
@@ -50,7 +50,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
         holder.bindTo(currentItem);
     }
 
-    // method for determining the size of the data set.
+    // method for determining the size of the data set
     @Override
     public int getItemCount() {
         return mItemsData.size();
@@ -62,14 +62,16 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
         private TextView mTitleText;
         private TextView mDescriptionText;
         private ImageView mItemImage;
+        private TextView mItemPrice;
 
         ViewHolder(View itemView) {
             super(itemView);
 
-            // Initialize the views.
+            // Initialize the views
             mTitleText = itemView.findViewById(R.id.title);
             mDescriptionText = itemView.findViewById(R.id.descriptionDetail);
             mItemImage = itemView.findViewById(R.id.artImageDetail);
+            mItemPrice = itemView.findViewById(R.id.txtViewPrice);
 
             // Set the OnClickListener to the entire view.
             itemView.setOnClickListener(this);
@@ -79,6 +81,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
             // Populate the textViews with data.
             mTitleText.setText(currentItem.getTitle());
            // mDescriptionText.setText(currentItem.getInfo());
+           // mItemPrice.setText(currentItem.getPrice());
 
             // Load the images into the ImageView using the Glide library.
             Glide.with(mContext).load(currentItem.getImageResource()).into(mItemImage);
@@ -92,6 +95,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>  {
             detailIntent.putExtra("title", currentItem.getTitle());
             detailIntent.putExtra("image_resource", currentItem.getImageResource());
             detailIntent.putExtra("description", currentItem.getInfo());
+            detailIntent.putExtra("price", currentItem.getPrice());
             mContext.startActivity(detailIntent);
         }
     }

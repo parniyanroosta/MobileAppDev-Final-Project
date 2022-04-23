@@ -83,7 +83,7 @@ public class Category_Painting extends AppCompatActivity {
         // Get the resources from the XML file
         String[] itemsList = getResources().getStringArray(R.array.items_titles);
         String[] itemsDescription = getResources().getStringArray(R.array.items_description);
-        int[] itemsPrice = getResources().getIntArray(R.array.items_price);
+        String[] itemsPrice = getResources().getStringArray(R.array.items_price);
         TypedArray itemsImageResources = getResources().obtainTypedArray(R.array.items_images);
 
         // Clear the existing data (to avoid duplication).
