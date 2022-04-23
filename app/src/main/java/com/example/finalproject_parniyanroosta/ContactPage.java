@@ -1,11 +1,11 @@
 package com.example.finalproject_parniyanroosta;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ContactPage extends AppCompatActivity {
 
@@ -19,13 +19,13 @@ public class ContactPage extends AppCompatActivity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SendMeMessage();
+                SendMeMessage(view);
             }
         });
-
     }
 
-    public void SendMeMessage() {
+    public void SendMeMessage(View view) {
         Toast.makeText(this, "This functionality is not set yet!", Toast.LENGTH_SHORT).show();
     }
+
 }

@@ -13,7 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class DetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.finalproject_parniyanroosta.MESSAGE";
-    public static String mOrderMessage="Your shopping cart is empty!";
+    public static String mOrderMessage="Thanks for shopping with us!";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +44,5 @@ public class DetailActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
     }
 }

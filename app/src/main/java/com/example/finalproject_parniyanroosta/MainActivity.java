@@ -4,13 +4,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView imgViewPainting, imgViewPottery, imgViewKnitting, imgViewEmbroidery;
+    TextView txtAppTitle, txtHomePage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,46 +21,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         imgViewPainting = findViewById(R.id.imageViewPainting);
-        imgViewPainting.setOnClickListener(v -> StartPaintingActivity());
+        imgViewPainting.setOnClickListener(v -> StartPaintingActivity(v));
 
         imgViewKnitting = findViewById(R.id.imageViewKnitting);
-        imgViewKnitting.setOnClickListener(v -> StartKnittingActivity());
+        imgViewKnitting.setOnClickListener(v -> StartKnittingActivity(v));
 
         imgViewPottery = findViewById(R.id.imageViewPottery);
-        imgViewPottery.setOnClickListener(v -> StartPotteryActivity());
+        imgViewPottery.setOnClickListener(v -> StartPotteryActivity(v));
 
         imgViewEmbroidery = findViewById(R.id.imageViewEmbroidery);
-        imgViewEmbroidery.setOnClickListener(v -> StartEmbroideryActivity());
+        imgViewEmbroidery.setOnClickListener(v -> StartEmbroideryActivity(v));
+
     }
 
-    public void StartPaintingActivity() {
+    public void StartPaintingActivity(View view) {
         Intent intent = new Intent(MainActivity.this, Category_Painting.class);
         startActivity(intent);
     }
 
-    public void StartPotteryActivity() {
+    public void StartPotteryActivity(View view) {
         Intent intent = new Intent(MainActivity.this, Category_Pottery.class);
         startActivity(intent);
     }
 
-    public void StartKnittingActivity() {
+    public void StartKnittingActivity(View view) {
         Intent intent = new Intent(MainActivity.this, Category_Knitting.class);
         startActivity(intent);
     }
 
-    public void StartEmbroideryActivity() {
+    public void StartEmbroideryActivity(View view) {
         Intent intent = new Intent(MainActivity.this, Category_Embroidery.class);
         startActivity(intent);
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-        //TODO
-        // to save the page info when the device is rotated-------@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-
     }
 
     @Override

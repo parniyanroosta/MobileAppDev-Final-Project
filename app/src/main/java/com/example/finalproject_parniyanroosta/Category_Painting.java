@@ -101,11 +101,6 @@ public class Category_Painting extends AppCompatActivity {
         // Notify the adapter of the change.
         mAdapter.notifyDataSetChanged();
     }
-
-
-
-
-
 }
 
 

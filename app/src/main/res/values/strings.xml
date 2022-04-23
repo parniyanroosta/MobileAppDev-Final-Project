@@ -4,7 +4,7 @@
     <string name="art_shop">Art Shop</string>
     <string name="here_is_my_website"> You can find your category of interest below,
         and by browsing the images of the handmade art in each category,
-        you can choose your favourite one to buy!</string>
+         choose your favourite one to buy!</string>
     <string name="knitting">Knitting</string>
     <string name="pottery">Pottery</string>
     <string name="sculpture">Sculpture</string>
@@ -79,19 +79,16 @@
         <item>@drawable/img_rainyautumn</item>
     </array>
 
-    <integer-array name="items_price">
-        <item>250</item>
-        <item>380</item>
-        <item>360</item>
-        <item>150</item>
-        <item>450</item>
-        <item>500</item>
-        <item>180</item>
-        <item>700</item>
-        <item>150</item>
-        <item>170</item>
-    </integer-array>
-
-
-
+    <string-array name="items_price">
+        <item>250 CAD</item>
+        <item>380 CAD</item>
+        <item>360 CAD</item>
+        <item>150 CAD</item>
+        <item>450 CAD</item>
+        <item>500 CAD</item>
+        <item>180 CAD</item>
+        <item>700 CAD</item>
+        <item>150 CAD</item>
+        <item>170 CAD</item>
+    </string-array>
 </resources>

@@ -13,19 +13,9 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
-
-
-
-
-
-
-
-
         Intent intent = getIntent();
-        String message = "Order: " + intent.getStringExtra(DetailActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(DetailActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.txtOrder);
         textView.setText(message);
-
-
     }
 }

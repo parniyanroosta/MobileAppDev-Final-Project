@@ -22,5 +22,4 @@ public class Item {
     String getInfo() { return description; }
     String getPrice() { return price;  }
     public int getImageResource() { return imageResource; }
-
 }
